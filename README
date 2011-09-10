@@ -1,0 +1,12 @@
+DuplicateFilesChecker -
+To check for duplicate files in the baseDir. Initialize with path String.
+	:checkDuplicates(FileC) - Called from constructor automatically.
+	:displayDistinct() - Prints the names of all the files in the baseDir & subdirectories to the standard out.
+	:displayDuplicates() - Prints the names of duplicaet files in the baseDir & subdirectories to the standard out, grouped.
+	:indexInDuplicates(FileC) - Example of bad program design.
+
+FileC - 
+Container. Extends java.io.File, compares by filename instead of path.
+
+DuplicateFiles -
+Container with an ArrayList<File> to store files with same name.
