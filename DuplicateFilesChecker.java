@@ -1,3 +1,7 @@
+/*
+	
+*/
+
 import java.io.File;
 import java.util.Iterator;
 import java.util.ArrayList;
@@ -98,26 +102,6 @@ class DuplicateFiles {
 			System.out.println(df.getPath());
 		}
 	}
-	/*public boolean equals(Object obj) { // << Raises conflicts with FileC's equals, using custom method instead
-		boolean result = false;
-		String f2Name = ((FileC)obj).getName();
-		if(dfList.get(0).getName().equals(f2Name))
-			result = true;
-		
-		return result;
-    }
-	//Custom method which was supposed to work.
-   public int exists(FileC f) { // << Now this is just embarrasing. Taking the worst approach now.
-		int result = -1;
-		String fName = f.getName();
-		int count = duplicateFileList.size();
-		while(count-- > 0) {
-			if(fName.equals(duplicateFilesList.get(count).dfList.get(0))) {
-				result = count;
-			}
-		}
-		return result;
-	}*/
 }
 
 class FileC extends File {
